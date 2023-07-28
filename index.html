@@ -22,7 +22,9 @@
                     colors: {
                         clifford: '#da373d',
                         'fruit_header': '#F85559',
-                        'btn-color': '#F85559',
+                        'btn-bestseller': '#AA1377',
+                        'btn-primary': '#E36709',
+                        'btn-new': '#004C3F',
                     }
                 }
             }
@@ -33,6 +35,10 @@
         .font {
             font-family: 'Libre Bodoni', serif;
         }
+
+        .btn{
+
+        }
     </style>
 </head>
 
@@ -40,15 +46,105 @@
 
     <body>
         <!-- header starts here -->
-        <header class=" lg:container  md:mx-auto">
+        <header class="bg-[#EDE8E7]">
             <!-- head design starts -->
-            <section>
+            <section class="  lg:container  md:mx-auto">
 
+
+                <!-- Navbar -->
+                <!-- Navbar -->
+                <nav class="p-4 drop-shadow-lg text-white flex items-center justify-between">
+
+                    <!-- Hamburger menu icon for small devices -->
+                    <div class="lg:hidden">
+                        <button class="dropdown dropdown-end">
+                            <div tabindex="0" class="btn btn-primary">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                        d="M4 6h16M4 12h16m-7 6h7"></path>
+                                </svg>
+                            </div>
+                            <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
+                                <li>
+                                    <a href="#" class="text-black hover:text-gray-300">Jewelry</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black hover:text-gray-300">Collections</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black hover:text-gray-300">%Outlet</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black hover:text-gray-300">Our Production</a>
+                                </li>
+                            </ul>
+                        </button>
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <img src="./image/logo.png" alt="Logo" class="h-8 w-8 mr-2">
+                    </div>
+
+                    <!-- Center section: Links (visible on large devices) -->
+                    <div class="hidden lg:flex items-center space-x-6">
+                        <a href="#" class="text-black hover:text-gray-300">Jewelry</a>
+                        <a href="#" class="text-black hover:text-gray-300">Collections</a>
+                        <a href="#" class="text-black hover:text-gray-300">%Outlet</a>
+                        <a href="#" class="text-black hover:text-gray-300">Our Production</a>
+                    </div>
+
+                    <!-- Right section: Icons -->
+                    <div class="hidden lg:flex items-center space-x-3">
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <img src="./icons/iconoir_search.svg" alt="">
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <img src="./icons/iconoir_heart.svg" alt="">
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <img src="./icons/iconoir_user.svg" alt="">
+                        </a>
+                    </div>
+                </nav>
             </section>
             <!-- head design ends -->
 
             <!-- banner design starts -->
-            <section>
+            <section class="lg:container  md:mx-auto">
+                <div class="flex">
+                    <img class="h-[700px] w-[200x] mr-14" src="./image/jewalary.png" alt="">
+                    <img class="h-2/5 w-[37%]" src="./image/woman.png" alt="">
+                    <div>
+                        <h1 class="text-8xl mt-[2rem] italic font-normal relative  right-4">
+                            Litkovska
+                        </h1>
+                        <h1 class="text-8xl italic font-normal relative right-1 .5">
+
+                            Collection
+                        </h1>
+                        <div class="">
+
+                            <button class="btn btn-primary bg-btn-primary border-none py-4 px-8 w-64 mt-16 ml-60 rounded-none"
+                                >
+                                See More
+                            </button>
+                            <div>
+                                <img class="w-80 h-80" src="./image/j4.png" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- icon starts -->
+                    <div>
+                        <img src="./icons/facebook.svg" alt="">
+                        <img src="./icons/instagram.svg" alt="">
+                        <img src="./icons/linkedin.svg" alt="">
+                    </div>
+
+                </div>
 
             </section>
             <!-- banner design ends -->
@@ -57,7 +153,230 @@
 
         <!-- main starts here -->
         <main class=" lg:container  md:mx-auto">
-            <section></section>
+            <section class=" mt-32 lg:container  md:mx-auto">
+                <div class="flex justify-between text-5xl">
+                    <h1>Bestsellers</h1> 
+                    <p class="text-2xl text-btn-primary">Viev All ></p>
+                </div>
+                <div class="flex mt-10">
+                    <div class="mr-8">
+                        
+                        <div class="card bg-base-100 shadow-xl px-5 py-5">
+                        
+                            <figure><img src="./image/j_4.png" alt="Shoes" /></figure>
+                            <div class="">
+                                <h2 class="mt-6 text-xl font-semibold text-center">
+                                    Necklace
+    
+                                </h2>
+                                <div class=" mx-auto">
+                                    <p class="text-center"><span class="  line-through text-slate-400">$ 2,350</span>
+                                        <span class="text-3xl font-bold text-black">$1,432</span>
+                                    </p>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="relative left-5 bottom-[442px]">
+                            <button class="btn btn-primary bg-btn-bestseller border-none  rounded-none px-8 py-2 h-8">
+                                Bestseller
+                              </button> <br>
+                              <button class="btn rounded-none mt-2 btn-primary border-none  bg-btn-primary px-8 py-2 h-8">
+                                Sale
+                              </button>
+    
+                        </div>
+                    </div>
+                    <div class="mr-8">
+                        
+                        <div class="card bg-base-100 shadow-xl px-5 py-5">
+                        
+                            <figure><img src="./image/j5.png" alt="Shoes" /></figure>
+                            <div class="">
+                                <h2 class="mt-6 text-xl font-semibold text-center">
+                                    Necklace
+    
+                                </h2>
+                                <div class=" mx-auto">
+                                    <p class="text-center"><span class="  line-through text-slate-400">$ 2,350</span>
+                                        <span class="text-3xl font-bold text-black">$1,432</span>
+                                    </p>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="relative left-5 bottom-[442px]">
+                            <button class="btn btn-primary bg-btn-bestseller border-none  rounded-none px-8 py-2 h-8">
+                                Bestseller
+                              </button> <br>
+                        </div>
+                    </div>
+                    <div class="mr-8">
+                        
+                        <div class="card bg-base-100 shadow-xl px-5 py-5">
+                        
+                            <figure><img src="./image/j8.png" alt="Shoes" /></figure>
+                            <div class="">
+                                <h2 class="mt-6 text-xl font-semibold text-center">
+                                    Necklace
+    
+                                </h2>
+                                <div class=" mx-auto">
+                                    <p class="text-center"><span class="  line-through text-slate-400">$ 2,350</span>
+                                        <span class="text-3xl font-bold text-black">$1,432</span>
+                                    </p>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="relative left-5 bottom-[442px]">
+                            <button class="btn btn-primary bg-btn-bestseller border-none  rounded-none px-8 py-2 h-8">
+                                Bestseller
+                              </button> <br>
+                              <button class="btn rounded-none mt-2 btn-primary border-none  bg-btn-new px-8 py-2 h-8">
+                                new
+                              </button>
+    
+                        </div>
+                    </div>
+                    <div class="mr-8">
+                        
+                        <div class="card bg-base-100 shadow-xl px-5 py-5">
+                        
+                            <figure><img src="./image/j7.png" alt="Shoes" /></figure>
+                            <div class="">
+                                <h2 class="mt-6 text-xl font-semibold text-center">
+                                    Necklace
+    
+                                </h2>
+                                <div class=" mx-auto">
+                                    <p class="text-center"><span class="  line-through text-slate-400">$ 2,350</span>
+                                        <span class="text-3xl font-bold text-black">$1,432</span>
+                                    </p>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="relative left-5 bottom-[442px]">
+                            <button class="btn btn-primary bg-btn-bestseller border-none  rounded-none px-8 py-2 h-8">
+                                Bestseller
+                              </button> <br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-4 lg:container  md:mx-auto">
+                <div class="flex justify-between text-5xl">
+                    <h1>Outlet</h1> 
+                    <p class="text-2xl text-btn-primary">Viev All ></p>
+                </div>
+                <div class="flex mt-10">
+                    <div class="mr-8">
+                        
+                        <div class="card bg-base-100 shadow-xl px-5 py-5">
+                        
+                            <figure><img src="./image/j9.png" alt="Shoes" /></figure>
+                            <div class="">
+                                <h2 class="mt-6 text-xl font-semibold text-center">
+                                    Necklace
+    
+                                </h2>
+                                <div class=" mx-auto">
+                                    <p class="text-center"><span class="  line-through text-slate-400">$ 45,880</span>
+                                        <span class="text-3xl font-bold text-black">$455</span>
+                                    </p>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="relative left-5 bottom-[442px]">
+                              <button class="btn rounded-none mt-2 btn-primary border-none  bg-btn-primary px-8 py-2 h-8">
+                                Sale
+                              </button>
+    
+                        </div>
+                    </div>
+                    <div class="mr-8">
+                        
+                        <div class="card bg-base-100 shadow-xl px-5 py-5">
+                        
+                            <figure><img src="./image/j10.png" alt="Shoes" /></figure>
+                            <div class="">
+                                <h2 class="mt-6 text-xl font-semibold text-center">
+                                    Necklace
+    
+                                </h2>
+                                <div class=" mx-auto">
+                                    <p class="text-center"><span class="  line-through text-slate-400">$ 2,350</span>
+                                        <span class="text-3xl font-bold text-black">$1,432</span>
+                                    </p>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="relative left-5 bottom-[442px]">
+                            <button class="btn rounded-none mt-2 btn-primary border-none  bg-btn-new px-8 py-2 h-8">
+                                new
+                              </button> <br>
+                              <button class="btn rounded-none mt-2 btn-primary border-none  bg-btn-primary px-8 py-2 h-8">
+                                Sale
+                              </button>
+                        </div>
+                    </div>
+                    <div class="mr-8">
+                        
+                        <div class="card bg-base-100 shadow-xl px-5 py-5">
+                        
+                            <figure><img src="./image/j8.png" alt="Shoes" /></figure>
+                            <div class="">
+                                <h2 class="mt-6 text-xl font-semibold text-center">
+                                    Necklace
+    
+                                </h2>
+                                <div class=" mx-auto">
+                                    <p class="text-center"><span class="  line-through text-slate-400">$ 2,350</span>
+                                        <span class="text-3xl font-bold text-black">$1,432</span>
+                                    </p>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="relative left-5 bottom-[442px]">
+                            <button class="btn btn-primary bg-btn-bestseller border-none  rounded-none px-8 py-2 h-8">
+                                Bestseller
+                              </button> <br>
+                              <button class="btn rounded-none mt-2 btn-primary border-none  bg-btn-new px-8 py-2 h-8">
+                                new
+                              </button>
+    
+                        </div>
+                    </div>
+                    <div class="mr-8">
+                        
+                        <div class="card bg-base-100 shadow-xl px-5 py-5">
+                        
+                            <figure><img src="./image/j7.png" alt="Shoes" /></figure>
+                            <div class="">
+                                <h2 class="mt-6 text-xl font-semibold text-center">
+                                    Necklace
+    
+                                </h2>
+                                <div class=" mx-auto">
+                                    <p class="text-center"><span class="  line-through text-slate-400">$ 2,350</span>
+                                        <span class="text-3xl font-bold text-black">$1,432</span>
+                                    </p>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="relative left-5 bottom-[442px]">
+                            <button class="btn btn-primary bg-btn-bestseller border-none  rounded-none px-8 py-2 h-8">
+                                Bestseller
+                              </button> <br>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section></section>
             <section></section>
             <section></section>
